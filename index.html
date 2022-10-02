@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+   li { list-style:none; }
+  .picture { list-style:none; padding:0; margin:0; }
+  .picture li { float:left; width:50%;}
+  .picture li a {display:block; margin:5px; border: 1px }
+  .picture li img { display:block; width:50%;  height:auto;}
+  .picture li img:hover { display:block; width:100%;  height:auto;} 
+</style>
+</head>
+
+<body>
+<div data-theme="b">
+	<div data-role="page" id="home">
+		<div data-role="header" data-theme="b">
+			<h1>동의과학대학교</h1>
+		</div>
+		<div data-role="content" style="text-align:center">
+				<img src="img/dit.png" width="300">
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#intro">컴퓨터소프트웨어과 소개</a></li>
+				<li><a href="#pr" data-rel="dialog">컴퓨터소프트웨어과 영상</a></li>
+				<li><a href="#gallery">학과 갤러리</a></li>
+				<li><a href="#song" data-rel="dialog">학교 교가</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>202151067_박지예</h1>
+		</div>
+	</div>
+	
+	<div data-role="page" id="intro">
+		<div data-role="header" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>컴퓨터소프트웨어과 소개</h1>
+		</div>
+		<div data-role="content">		
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>소개</h3>
+					<p>4차 산업의 핵심 분야인 인공지능(AI) · 빅데이터 · 사물인터넷(IoT) · 클라우드 컴퓨팅 등 지능정보기술을 활용한 창의 융합형 소프트웨어 개발 전문가를 양성</p>
+				</div>
+				<div data-role="collapsible" >
+                    <h3>학과 활동</h3>
+					<p>프로젝트 수업, 산업기사특강, 산학연계 캡스톤디자인, 실무AI프로그래밍</p>
+				</div>
+                <div data-role="collapsible">
+                    <h3>CONTACT US</h3>
+                    <p>건물위치 : 미래관 6~7층  <br>  전화번호 : 051-860-3210</p>
+                </div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>202151067_박지예</h1>
+		</div>		
+	</div>
+	
+	<div data-role="page" id="pr" >
+		<div data-role="header" data-position="fixed" data-theme="b">
+            <a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>	
+			<h1>컴퓨터소프트웨어과 홍보</h1>
+		</div>
+		<div data-role="content" >
+			<div class="ui-bar ui-bar-a">학과 소개 동영상</div><br/>
+			<li><iframe width="560" height="315" src="https://www.youtube.com/embed/pOP6scBvlOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li><br/>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>202151067_박지예</h1>
+		</div>	
+	</div>
+
+    <div data-role="page" id="gallery">
+        <div data-role="header" data-position="fixed"  data-theme="b">
+            <a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+            <h1>학과 갤러리</h1>
+        </div>
+        <div data-role="content">
+            <ul class="picture">
+                <li><a href="img/1.jpg" rel="external"><img src="img/1.jpg" /></a></li>	
+                <li><a href="img/2.jpg" rel="external"><img src="img/2.jpg" /></a></li>	
+                <li><a href="img/3.jpg" rel="external"><img src="img/3.jpg" /></a></li>	
+                <li><a href="img/4.png" rel="external"><img src="img/4.png" /></a></li>	
+                
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <h1>202151067_박지예</h1>
+        </div>		
+    </div>
+
+	<div data-role="page" id="song">
+		<div data-role="header">
+            <a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>	
+			<h1>학교 교가</h1>
+		</div>
+		<div data-role="content">
+			<div class="ui-bar ui-bar-e">교가</div><br/>
+			<audio controls width="100%" preload="metadata">
+				<source src="song.mp3" type="audio/mp3">
+			</audio>			
+			<img src="img/song.jpg" alt="" width="100%">
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>202151067_박지예</h1>
+		</div>	
+	</div>
+
+</div>	
+</body>
+</html>
