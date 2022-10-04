@@ -1,6 +1,6 @@
 # 2022Web-Introduce
 
-### 2022-10-03
+### 2022/10/03
 
 + github site
   + https://jiyep.github.io/2022Web-Introduce/
